@@ -11,6 +11,10 @@
 #     display count in each bea in histogram
 #   Feeding only nomral gap data to analysis
 
+# Runtime environment
+#    please check "environment.yaml"
+#    Tensorflow version 1.15.0 
+#
 # Reference:
 #   Add info in plot https://queirozf.com/entries/add-labels-and-text-to-matplotlib-plots-annotation-examples
 #   Format https://www.w3schools.com/python/ref_string_format.asp
@@ -500,7 +504,7 @@ def minimize_volatility():
   # Define the model
   # Portfolio Volatility = Sqrt (Transpose (Wt.SD) * Correlation Matrix * Wt. SD)
   # Variable to optimzed: Wt
-  # Cost is Portfolio Volatility 
+  # Cost is Portfolio Volatility
 
   if (DEBUGGING):
      pdb.set_trace()
